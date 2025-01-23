@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    min-height:100vh;
+    background-color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo{
+    background-image: url(n3.jpg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: cover;
+    font-size: 50px; 
+    font-family: Impact;
+}
+nav{
+    width: 100vw;
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+    padding-right: 40px
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(135, 109, 215, 0.229);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(8, 4, 138, 0.152);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.sidebar a{
+    width: 100%;
+}
+.hideonmobile:hover{
+    background-color:#00F7FF;
+    border-radius: 100%;
+    box-shadow:0px 0px 44px 3px #00F7FF;
+    transition: 0.5s;
+   
+}
+.menu-button{
+    display: block;
+}
+.sidebar li{
+    width: 100%;
+}
+@media(max-width:800px){
+    .hideonmobile{
+        display: none;
+    }
+}
+@media(max-width:400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+#welcome{
+    margin: 22px;
+    text-align: justify;
+}
+h2,p{
+    color: black;
+
+}
+
+img{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+}
+footer{
+    width: 100vw;
+    height: 150px;
+    background-color: rgb(11, 11, 11);
+    text-align: center;
+    box-shadow:-10px 0 10px rgb(33, 32, 32);
+
+
+}
